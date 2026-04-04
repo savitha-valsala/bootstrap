@@ -1,0 +1,35 @@
+
+header{background-color: cyan;
+margin: 5px;
+padding: 10px;
+color:brown;
+font-size: x-large;
+text-align: center;}
+nav{
+-webkit-flex:1;
+-ms-flex: 1;
+flex: 1;
+background-color: darkolivegreen;
+color: antiquewhite;}
+article{
+    -webkit-flex:3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: darkslateblue;
+    
+    padding: 10px;
+    margin-left: 5px;
+    
+    color: antiquewhite;
+    
+}
+section::after{
+    display:-webkit-flex;
+    display: flex;
+}
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
